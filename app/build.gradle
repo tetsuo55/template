@@ -138,7 +138,7 @@ task encryptAssets {
                         fos.write(output)
                     }
                 }
-                final byte[] output = cipher.doFinal()
+                byte[] output = cipher.doFinal()
                 if (output != null) {
                     fos.write(output)
                 }
